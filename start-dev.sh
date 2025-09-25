@@ -16,7 +16,7 @@ cleanup() {
 trap cleanup SIGINT SIGTERM
 
 # Start backend
-echo "📡 Starting FastAPI backend on port 8005..."
+echo "📡 Starting FastAPI backend on port 8000..."
 cd backend
 source venv/bin/activate
 python run.py &
@@ -35,9 +35,9 @@ cd ..
 
 echo ""
 echo "✅ Development servers started!"
-echo "   Backend:  http://localhost:8005"
+echo "   Backend:  http://localhost:8000"
 echo "   Frontend: http://localhost:3000"
-echo "   API Docs: http://localhost:8005/docs"
+echo "   API Docs: http://localhost:8000/docs"
 echo ""
 echo "Press Ctrl+C to stop both servers"
 

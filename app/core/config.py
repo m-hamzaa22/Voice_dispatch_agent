@@ -26,7 +26,7 @@ class Config:
     
     # Server Configuration
     HOST = os.getenv("HOST", "0.0.0.0")
-    PORT = int(os.getenv("PORT", 8005))
+    PORT = int(os.getenv("PORT", 8000))
     
     # Webhook Configuration
     WEBHOOK_URL = os.getenv("WEBHOOK_URL")
@@ -38,9 +38,7 @@ class Config:
     DEBUG = True
     ALLOWED_HOSTS = [
         "http://localhost:3000",
-        "http://localhost:3001", 
-        "http://127.0.0.1:3000",
-        "http://127.0.0.1:3001"
+        "http://127.0.0.1:3000"
     ]
 
 # Global settings instance

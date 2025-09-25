@@ -16,7 +16,7 @@ This tool allows logistics administrators to:
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   React Frontend │    │  FastAPI Backend │    │   Retell AI     │
-│   (Port 3000)    │◄──►│   (Port 8005)    │◄──►│   Voice Service │
+│   (Port 3000)    │◄──►│   (Port 8000)    │◄──►│   Voice Service │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
                                 │
                                 ▼
@@ -98,7 +98,7 @@ OPENAI_API_KEY=your_openai_api_key_here
 
 # Server Configuration
 HOST=0.0.0.0
-PORT=8005
+PORT=8000
 
 # Webhook Configuration (use ngrok/cloudflare tunnel for local testing)
 WEBHOOK_URL=https://your-tunnel-domain.com/webhook
@@ -153,8 +153,8 @@ npm start
 
 **Access Points:**
 - **Frontend**: http://localhost:3000
-- **Backend API**: http://localhost:8005
-- **API Documentation**: http://localhost:8005/docs
+- **Backend API**: http://localhost:8000
+- **API Documentation**: http://localhost:8000/docs
 
 ## 📱 Application Features
 
@@ -297,7 +297,7 @@ The application uses optimized voice settings:
 - Ensure psycopg2-binary is installed
 
 **WebSocket Connection Failed:**
-- Check backend is running on port 8005
+- Check backend is running on port 8000
 - Verify WebSocket URL format in environment
 - Ensure firewall allows WebSocket connections
 
@@ -328,9 +328,7 @@ The application uses optimized voice settings:
 - axios 1.12.2 - HTTP client
 - TypeScript 4.9.5 - Type safety
 
-## 📄 License
 
-This project implements a production-ready AI voice agent system for logistics dispatch operations with real-time conversation handling and intelligent data extraction capabilities.
 
 ---
 
